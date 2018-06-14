@@ -73,7 +73,7 @@ if (movieName.charAt(0) === "+") {
 var queryUrl = "http://www.omdbapi.com/?t=" + movieName + "&apikey=trilogy";
 request(queryUrl, function(error, response, body) {
   if (!error && response.statusCode === 200) {
-    console.log(response.body);
+    //console.log(response.body);
     var bodyOmdb = JSON.parse(response.body);
     console.log(`
     Title: ${bodyOmdb.Title}
